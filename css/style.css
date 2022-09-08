@@ -19,31 +19,34 @@ html{
 main{
     width: 100%;
     height: 100vh;
-    background-color: #222222;
+    background-color: black;
 }
 
+/* FIRST CONTAINER */
 .zoom-container{
-    background-color: black;
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 0px 30px;
+    overflow: scroll;
 }
 
 .zoom-container-two{
     background-color: #222222;
-    height: 100px;
+    height: 80px;
 }
 
 .card{
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 5px);
     height: 150px;
     background-image: url(https://picsum.photos/200/150);
     background-size: cover;
     background-position: center;
     position: relative;
+    margin-right: 5px;
+    margin-top: 20px;
 }
 
 .card-content{
@@ -54,4 +57,43 @@ main{
     bottom: 0;
     left: 0;
     padding: .3rem;
+}
+
+/* 2ND CONTAINER */
+.zoom-container-two{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-1{
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+
+.icons-main{
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+
+.icons-container{
+}
+
+.zoom-container-two i{
+    font-size: 2rem;
+}
+
+.icons-container p{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.endbutton{
+    display: inline-block;
+}
+
+.endbutton > p{
+    color: red;
+    background-color: grey;
 }
