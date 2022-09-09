@@ -15,6 +15,10 @@ html{
     margin: 0 auto;
 }
 
+header{
+
+}
+
 /* MAIN */
 main{
     width: 100%;
@@ -33,20 +37,12 @@ main{
     overflow: scroll;
 }
 
-.zoom-container-two{
-    background-color: #222222;
-    height: 80px;
-}
 
 .card{
     width: calc(100% / 6 - 5px);
     height: 150px;
-    background-image: url(https://picsum.photos/200/150);
-    background-size: cover;
-    background-position: center;
     position: relative;
     margin-right: 5px;
-    margin-top: 20px;
 }
 
 .card-content{
@@ -61,39 +57,49 @@ main{
 
 /* 2ND CONTAINER */
 .zoom-container-two{
+    background-color: #222222;
+    height: 80px;
     display: flex;
-    justify-content: space-between;
+    padding: 0px 10px;
 }
 
 .icons-1{
-    text-align: center;
     color: white;
-    display: inline-block;
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .icons-main{
-    text-align: center;
     color: white;
-    display: inline-block;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icons-container{
-}
-
-.zoom-container-two i{
-    font-size: 2rem;
+.icons-container i{
+    font-size: 2.4rem;
+    padding-left: .5rem;
 }
 
 .icons-container p{
-    font-size: 1.2rem;
+    padding-top: 5px;
+    font-size: 1rem;
     color: white;
+    display: block;
 }
 
 .endbutton{
-    display: inline-block;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .endbutton > p{
     color: red;
     background-color: grey;
+    height: 100%;
+    line-height: 80px;
 }
