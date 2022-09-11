@@ -43,6 +43,9 @@ main{
     height: 150px;
     position: relative;
     margin-right: 5px;
+    background-image: url(https://picsum.photos/200/150);
+    background-position: center;
+    background-size: cover;
 }
 
 .card-content{
@@ -71,6 +74,10 @@ main{
     align-items: center;
 }
 
+.icons-1 *{
+    margin-right: 5px;
+}
+
 .icons-main{
     color: white;
     width: 60%;
@@ -79,16 +86,26 @@ main{
     align-items: center;
 }
 
+.icons-main *{
+    margin-right: 5px
+}
+
 .icons-container i{
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     padding-left: .5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .icons-container p{
     padding-top: 5px;
-    font-size: 1rem;
+    font-size: .8rem;
     color: white;
     display: block;
+}
+
+.green{
+    color: green;
 }
 
 .endbutton{
